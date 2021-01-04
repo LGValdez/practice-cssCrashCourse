@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin: 0;
+}
+.clearFix {
+    clear: both;
+}
+#pageContainer {
+    position: relative;
+    min-height: 100vh;
+}
+#contentWrap {
+    padding-bottom: 3.3em;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#mainHeader{
+    background: #333;
+    color: white
+}
+#mainNav {
+    background-color: #ccc;
+    color: black;
+}
+#mainNav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#mainNav li {
+    display: inline;
+    padding: 5px 10px;
+}
+#mainNav li:hover {
+    background-color: #aaa;
+}
+#mainNav a {
+    color: black;
+    text-decoration: none;
+    font-size: 26px;
+}
+#jumbo {
+    background-image: url('../images/bg-grey.jpeg');
+    background-position: center center;
+    min-height: 120px;
+    text-align: center;
+}
+#jumbo h1 {
+    color: white;
+    font-size: 45px;
+    padding-top: 10px;
+    line-height: 1.6em;
+}
+#main {
+    float: right;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+#sidebar {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid darkgrey;
+    border-bottom: 50px;
+    letter-spacing: 0.2em;
+    word-spacing: 0.3em;
+}
+#fixedElement {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    right: 10px;
+    background: #ff652f;
+    padding: 5px;
+}
+#mainFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 3.3em;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+#positionExample {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    position: relative;
+}
+#positionExample span:first-child {
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+}
+#positionExample span:last-child {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+@media (max-width:600px){
+    #main, #sidebar {
+        width: 100%;
+        float: none
+    }
+}
+@media (min-width:800px){
+    #fixedElement {
+        z-index: 99 !important;
+    }
+}
